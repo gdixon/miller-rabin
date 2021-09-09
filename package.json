@@ -5,7 +5,7 @@
   "main": "lib/mr.js",
   "bin": "bin/miller-rabin",
   "scripts": {
-    "test": "mocha --reporter=spec test/**/*-test.js"
+    "test": "npx mocha --require esm test/**/*-test.js"
   },
   "repository": {
     "type": "git",
@@ -23,10 +23,11 @@
   },
   "homepage": "https://github.com/indutny/miller-rabin",
   "devDependencies": {
-    "mocha": "^2.0.1"
+    "mocha": "^7.1.0"
   },
   "dependencies": {
-    "bn.js": "^4.0.0",
-    "brorand": "^1.0.1"
+    "bn.js": "^5.0.1",
+    "brorand": "^1.0.1",
+    "esm": "^3.2.25"
   }
 }
